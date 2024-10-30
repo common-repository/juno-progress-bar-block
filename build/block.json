@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pono-press/juno",
+  "version": "0.1.0",
+  "title": "Juno",
+  "category": "widgets",
+  "icon": "minus",
+  "description": "Progress bar block plugin with customizable circle, square and semi-circle shaped progress bars.",
+  "example": {},
+  "keywords": [
+    "progress",
+    "progress bar",
+    "bar",
+    "juno",
+    "pono"
+  ],
+  "supports": {
+    "html": false,
+    "typography": {
+      "fontSize": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalFontFamily": true
+    }
+  },
+  "textdomain": "juno",
+  "attributes": {
+    "shapeType": {
+      "type": "string",
+      "default": "circle"
+    },
+    "enableText": {
+      "type": "boolean",
+      "default": true
+    },
+    "percentile": {
+      "type": "integer",
+      "default": 100
+    },
+    "size": {
+      "type": "integer",
+      "default": 25
+    },
+    "strokeWidth": {
+      "type": "integer",
+      "default": 2
+    },
+    "trailWidth": {
+      "type": "integer",
+      "default": 2
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#42505C"
+    },
+    "fillColor": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "strokeColor": {
+      "type": "string",
+      "default": "#ffbb00"
+    },
+    "trailColor": {
+      "type": "string",
+      "default": "#abb8c3"
+    },
+    "shapeAnimation": {
+      "type": "string",
+      "default": "bounce"
+    },
+    "animationDuration": {
+      "type": "integer",
+      "default": 1200
+    }
+  },
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js"
+}
